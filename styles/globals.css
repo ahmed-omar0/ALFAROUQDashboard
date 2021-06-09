@@ -1,0 +1,100 @@
+/* Start Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600&family=Roboto:wght@300;400&display=swap');
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;
+*/
+/* End Fonts */
+/* Start Global */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+h1, h2, h3, h4, h5 , h6{
+  font-family: 'Playfair';
+  font-family: 'Roboto Slab', serif;
+}
+p, li{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  letter-spacing: .5px;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.hidden{
+  visibility: hidden;
+  opacity: 0;
+}
+/* End Global */
+/* Start Navbar */
+nav{
+  height: 100vh;
+  width: inherit;
+  position: fixed;
+  transition: .5s;
+}
+nav .navbar-toggler{
+  display: none;
+}
+nav .close-icon{
+  cursor: pointer;
+  position: absolute;
+  right: 18px;
+  top: 10px;
+}
+nav .close-icon{
+  font-size: 22px;
+  color: rgb(202, 199, 199) !important;
+}
+nav .navbar-logo h2{
+  letter-spacing: 1px;
+}
+nav .nav{
+  transition: .2s;
+}
+nav .nav .nav-item .nav-link, nav .nav .nav-item svg{
+  color: rgb(202, 199, 199) !important;
+  font-size: 18px;
+  padding-bottom: 2px;
+  margin-right: 2px;
+  transition: .5s;
+}
+nav .nav .nav-item svg {
+  font-size: 20px;
+}
+nav .nav .nav-item:hover .nav-link, nav .nav .nav-item:hover svg{
+  color: white !important;
+}
+nav.close {
+  padding: 0 !important;
+  width: 50px;
+}
+nav.close .navbar-toggler{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  border: none;
+  margin: 8px 0 0 10px !important;
+  padding: 0;
+  cursor: pointer;
+  transition: .3s;
+}
+nav.close .close-icon{
+  transition: .5s;
+  opacity: 0;
+  visibility: hidden;
+}
+nav.close .nav.close .nav-item .nav-link svg{
+  font-size: 22px;
+  margin: 15px 0;
+}
+/* End Navbar */
