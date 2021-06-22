@@ -8,7 +8,7 @@ import { BiWorld } from 'react-icons/bi';
 import { useDispatch, useSelector } from 'react-redux';
 import CloseNav from './CloseNav';
 import MainNav from './MainNav';
-import useWindowWidth from '../../custom hooks/useWindowWidth';
+import useWindowWidth from '../../customHooks/useWindowWidth';
 
 const SideNavbar = () => {
     const width = useWindowWidth()
