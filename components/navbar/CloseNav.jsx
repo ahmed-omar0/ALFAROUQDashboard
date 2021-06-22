@@ -6,9 +6,9 @@ import { BsFillPeopleFill } from 'react-icons/bs';
 import { CgProfile } from 'react-icons/cg';
 import { BiLogOut } from 'react-icons/bi';
 
-const CloseNav = ({closeNavRef}) => {
+const CloseNav = (props) => {
     return (
-        <ul className="nav flex-column close hidden" ref={closeNavRef}>
+        <ul className={`nav flex-column close align-self-center ${props.class}`} ref={props.closeNavRef}>
             <li className="nav-item">
                 <Link href="/">
                     <a className="nav-link">

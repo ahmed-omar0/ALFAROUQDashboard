@@ -6,46 +6,56 @@ import { BsFillPeopleFill } from 'react-icons/bs';
 import { CgProfile } from 'react-icons/cg';
 import { BiLogOut } from 'react-icons/bi';
 
-const MainNav = ({navRef}) => {
+const MainNav = (props) => {
     return (
-        <ul className="nav nav-pills flex-column fs-6 " ref={navRef}>
-            <li className="nav-item mt-2">
+        <ul className={`nav nav-pills flex-column fs-6 mt-4 align-self-center ${props.class}`} ref={props.navRef}>
+            <li className="nav-item my-2">
                 <Link href="/">
-                    <a className="nav-link"> 
-                        <AiFillDashboard/>
+                    <AiFillDashboard/>
+                </Link>
+                <Link href="/">
+                    <a> 
                         Dashboard
                     </a>
                 </Link>
             </li>
-            <li className="nav-item mt-2">
-                <Link href="/">
-                    <a className="nav-link"> 
-                        <AiFillProject/>
+            <li className="nav-item my-2">
+                <Link href="projects">
+                    <AiFillProject/>
+                </Link>
+                <Link href="projects">
+                    <a> 
                         Projects
                     </a>
                 </Link>
             </li>
-            <li className="nav-item mt-2">
-                <Link href="/">
-                    <a className="nav-link"> 
-                        <BsFillPeopleFill/>
+            <li className="nav-item my-2">
+                <Link href="our-customers">
+                    <BsFillPeopleFill/>
+                </Link>
+                <Link href="our-customers">
+                    <a> 
                         Our Cutomers
                     </a>
                 </Link>
             </li>
-            <li className="nav-item mt-2">
-                <Link href="/">
-                    <a className="nav-link"> 
-                        <CgProfile/>
+            <li className="nav-item my-2">
+                <Link href="profile">
+                    <CgProfile/>
+                </Link>
+                <Link href="profile">
+                    <a> 
                         Profile
                     </a>
                 </Link>
             </li>
             <hr />
-            <li className="nav-item mt-2">
-                <Link href="/">
-                    <a className="nav-link">
-                        <BiLogOut/>
+            <li className="nav-item my-2">
+                <Link href="log-in">
+                    <BiLogOut/>
+                </Link>
+                <Link href="log-in">
+                    <a>
                         Log-Out
                     </a>
                 </Link>
