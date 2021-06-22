@@ -1,7 +1,7 @@
 import SideNavbar from "./navbar/SideNavbar";
 import Footer from "./Footer";
 import { useSelector } from 'react-redux';
-import useWindowWidth from "../custom hooks/useWindowWidth";
+import useWindowWidth from "../customHooks/useWindowWidth";
 
 
 const LayOut = ({children}) => {
