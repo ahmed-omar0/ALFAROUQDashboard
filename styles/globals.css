@@ -14,12 +14,11 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 h1, h2, h3, h4, h5 , h6{
-  font-family: 'Playfair';
   font-family: 'Roboto Slab', serif;
 }
 p, li{
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: .5px;
 }
 a {
@@ -37,6 +36,7 @@ a {
 /* End Global */
 /* Start Navbar */
 nav{
+  z-index: 100;
   height: 100vh;
   width: inherit;
   position: fixed;
@@ -110,3 +110,76 @@ nav.close .nav.close .nav-item .nav-link svg{
   }
 }
 /* End Navbar */
+/* Start Header */
+.header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+}
+.header .icons{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 50px;
+}
+.header .icons div {
+  position: relative;
+  cursor: pointer;
+  margin: 0 3px;
+}
+.header .icons div span.red-dot{
+  background-color: red;
+  padding: 5px 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  z-index: 1;
+}
+.header .icons div:nth-child(1) span.red-dot{
+  top: 5px;
+  right: 3px;
+}
+.header .profile-info {
+  position: relative;
+}
+.header .profile-info .image{
+  max-width: 77px;
+  max-height: 77px;
+  cursor: pointer;
+}
+.header .profile-info .info{
+  position: absolute;
+  top: 90px;
+  right: 50%;
+  transform: translateX(15%);
+  width: 180px;
+  background-color: #4D4F5C;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  transition: .5s;
+}
+.header .profile-info .info::after{
+  content: '';
+  border: 10px solid #4d4f5c;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: -17px;
+  right: 18px;
+  z-index: 1;
+}
+.header .profile-info .info h5{
+  color: #828BB2;
+  font-size: 13px;
+}
+.header .profile-info .info h6{
+  font-size: 12px;
+  text-align: center;
+}
+.header .profile-info .info ul li a{
+  font-size: 14px !important; 
+}
+/* End Header */

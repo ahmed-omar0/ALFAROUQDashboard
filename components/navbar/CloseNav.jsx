@@ -38,7 +38,7 @@ const CloseNav = (props) => {
                 </Link>
             </li>
             <li className="nav-item">
-                <Link href="/">
+                <Link href="/login">
                     <a className="nav-link">
                         <BiLogOut title="Log-Out"/>
                     </a>

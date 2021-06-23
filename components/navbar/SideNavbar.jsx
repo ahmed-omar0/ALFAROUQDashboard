@@ -5,7 +5,7 @@ import Link from 'next/link'
 // Icons
 import { BiWorld } from 'react-icons/bi';
 // Redux
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import CloseNav from './CloseNav';
 import MainNav from './MainNav';
 import useWindowWidth from '../../customHooks/useWindowWidth';
@@ -32,7 +32,7 @@ const SideNavbar = () => {
                 <TogglerIcon dispatch={dispatch} navbarToggle={navbarToggle}/>
                 <div className='navbar-logo d-flex align-items-center justify-content-center' ref={logoRef}>
                     <BiWorld/>
-                    <Link href="#">
+                    <Link href="/">
                         <a className="mb-0 mx-1">ALFAROUQ</a>
                     </Link>
                 </div>
@@ -44,7 +44,7 @@ const SideNavbar = () => {
                 <TogglerIcon dispatch={dispatch} navbarToggle={navbarToggle}/>
                 <div className='navbar-logo d-flex align-items-center justify-content-center hidden' ref={logoRef}>
                     <BiWorld/>
-                    <Link href="#">
+                    <Link href="/">
                         <a className="mb-0 mx-1">ALFAROUQ</a>
                     </Link>
                 </div>

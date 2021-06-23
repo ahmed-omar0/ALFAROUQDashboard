@@ -20,30 +20,30 @@ const MainNav = (props) => {
                 </Link>
             </li>
             <li className="nav-item my-2">
-                <Link href="projects">
+                <Link href="/projects">
                     <AiFillProject/>
                 </Link>
-                <Link href="projects">
+                <Link href="/projects">
                     <a> 
                         Projects
                     </a>
                 </Link>
             </li>
             <li className="nav-item my-2">
-                <Link href="our-customers">
+                <Link href="/our-customers">
                     <BsFillPeopleFill/>
                 </Link>
-                <Link href="our-customers">
+                <Link href="/our-customers">
                     <a> 
                         Our Cutomers
                     </a>
                 </Link>
             </li>
             <li className="nav-item my-2">
-                <Link href="profile">
+                <Link href="/profile">
                     <CgProfile/>
                 </Link>
-                <Link href="profile">
+                <Link href="/profile">
                     <a> 
                         Profile
                     </a>
@@ -51,10 +51,10 @@ const MainNav = (props) => {
             </li>
             <hr />
             <li className="nav-item my-2">
-                <Link href="log-in">
+                <Link href="/login">
                     <BiLogOut/>
                 </Link>
-                <Link href="log-in">
+                <Link href="/login">
                     <a>
                         Log-Out
                     </a>
